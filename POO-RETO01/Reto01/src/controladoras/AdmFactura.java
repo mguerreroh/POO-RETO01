@@ -122,20 +122,34 @@ public class AdmFactura {
     
     //**
     public boolean validarFecha(String fecha) {
-
-    if (fecha == null)
-    return false;
-    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-    if (fecha.trim().length() != dateFormat.toPattern().length())
-    return false;
-    dateFormat.setLenient(false);
-    try {
-        dateFormat.parse(fecha.trim());
-    }
-    catch (ParseException pe) {
-        return false;
-    }
-    return true;
+        Date fechaIngresada;
+        if (fecha == null)
+            return false;
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        if (fecha.trim().length() != dateFormat.toPattern().length())
+            return false;
+        dateFormat.setLenient(false);
+        try {
+            dateFormat.parse(fecha.trim());
+        }
+        catch (ParseException pe) {
+            return false;
+        }
+        return true;
     }
     //**
+    
+    public boolean verificaFechaPerteneceMes(String fecha, Integer mes){
+        if (mes != Integer.parseInt(fecha.substring(5, 6)))
+            return false;
+        return true;
+    }
+    
+    public boolean verificaFechaPerteneceAño(String fecha, Integer anho){
+        if (anho != Integer.parseInt(fecha.substring(1, 4)))
+            return false;
+        return true;
+    }
+    
+    
 }

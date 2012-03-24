@@ -63,11 +63,21 @@ public class AdmFacturaTest {
     
     @Test
     public void verificaFecha(){
-        assertFalse(!=admFactura.validarFecha("2012-12-32"));
+        assertFalse(admFactura.validarFecha("2012-12-32"));
         System.out.println("La fecha es incorrecta");
     }
     
+    @Test
+    public void siFechaPerteneceAlMesIngresado(){
+        assertFalse(admFactura.verificaFechaPerteneceMes("2012-12-32",8));
+        System.out.println("La fecha de la factura no corresponde al mes ingresado");
+    }
 
+    @Test
+    public void siFechaPerteneceAlAñoIngresado(){
+        assertFalse(admFactura.verificaFechaPerteneceAño("2012-12-32",2015));
+        System.out.println("La fecha de la factura no corresponde al año ingresado");
+    }
     /*
     @Test
     public void alumnosdebeTenerUnaCalificacion(){
