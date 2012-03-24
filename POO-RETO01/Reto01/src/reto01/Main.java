@@ -7,6 +7,7 @@ package reto01;
 import controladoras.AdmCliente;
 import java.util.ArrayList;
 import modelos.Cliente;
+import vistas.Leeme;
 
 /**
  * @author mguerrero
@@ -18,6 +19,10 @@ public class Main {
      */
     public static void main(String[] args) {
         //Codigo de prueba
+   
+        Leeme miLeeme = new Leeme(); 
+        miLeeme.show();
+        
         
         ArrayList<Cliente> dbCliente = new ArrayList<Cliente>();
         
