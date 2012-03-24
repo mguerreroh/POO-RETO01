@@ -53,23 +53,17 @@ public class RegistraFacturas extends javax.swing.JFrame {
         setBackground(new java.awt.Color(204, 204, 204));
         setName("frmRegistraFactura");
 
-        jTextField1.setText("jTextField1");
-
         jLabel1.setText("DNI:");
 
         jLabel2.setText("Nombre:");
 
         jLabel3.setText("Apellido:");
 
-        jTextField2.setText("jTextField1");
-
-        jTextField3.setText("jTextField1");
-
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ricardogs.SECREXLOCAL\\Documents\\NetBeansProjects\\POO-RETO01\\Reto01\\Images\\Search.bmp")); // NOI18N
+        jButton1.setText("Busca DNI");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setName("btnBuscaCliente");
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ricardogs.SECREXLOCAL\\Documents\\NetBeansProjects\\POO-RETO01\\Reto01\\Images\\SAVE.BMP")); // NOI18N
+        jButton3.setText("Graba Cliente");
         jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.setName("btnSalvaDatosCliente");
 
@@ -85,20 +79,16 @@ public class RegistraFacturas extends javax.swing.JFrame {
         jList1.setName("lstListaFacturas");
         jScrollPane1.setViewportView(jList1);
 
-        jTextField4.setText("jTextField4");
-
-        jTextField5.setText("jTextField4");
-
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ricardogs.SECREXLOCAL\\Documents\\NetBeansProjects\\POO-RETO01\\Reto01\\Images\\Add.bmp")); // NOI18N
+        jButton4.setText(">");
         jButton4.setName("btnAddFacturaMonto");
 
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ricardogs.SECREXLOCAL\\Documents\\NetBeansProjects\\POO-RETO01\\Reto01\\Images\\Remove.bmp")); // NOI18N
+        jButton5.setText("<");
         jButton5.setName("btnRemoveFacturaMonto");
 
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ricardogs.SECREXLOCAL\\Documents\\NetBeansProjects\\POO-RETO01\\Reto01\\Images\\RemoveAll.bmp")); // NOI18N
+        jButton6.setText("<<");
         jButton6.setName("btnRemoveAll");
 
-        jButton8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ricardogs.SECREXLOCAL\\Documents\\NetBeansProjects\\POO-RETO01\\Reto01\\Images\\SAVE.BMP")); // NOI18N
+        jButton8.setText("Graba Facturas");
         jButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton8.setName("btnSalvaDatosFacturas");
 
@@ -123,9 +113,9 @@ public class RegistraFacturas extends javax.swing.JFrame {
                                 .addGap(37, 37, 37)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addComponent(jButton3)
@@ -140,18 +130,17 @@ public class RegistraFacturas extends javax.swing.JFrame {
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(41, 41, 41)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4)
-                    .addComponent(jButton6)
-                    .addComponent(jButton5))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 25, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton8)
                         .addGap(233, 233, 233))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())))
         );
         layout.setVerticalGroup(
@@ -161,7 +150,7 @@ public class RegistraFacturas extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -177,24 +166,22 @@ public class RegistraFacturas extends javax.swing.JFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(17, 17, 17)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jTextField4)
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel5)
+                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(jButton5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton6)))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton8)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addGap(23, 23, 23))
         );
 
         pack();

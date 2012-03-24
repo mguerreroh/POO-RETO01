@@ -27,6 +27,14 @@ public class Cliente {
         this.numeroPuntos = numeroPuntos;
     }
 
+    public double getNumeroPuntos() {
+        return numeroPuntos;
+    }
+
+    public String getTipoCliente() {
+        return tipoCliente;
+    }
+
     public String getApellido() {
         return apellido;
     }

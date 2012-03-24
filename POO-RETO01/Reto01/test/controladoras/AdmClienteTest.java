@@ -4,10 +4,10 @@
  */
 package controladoras;
 
-import org.junit.AfterClass;
+import java.util.ArrayList;
+import modelos.Cliente;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.BeforeClass;
 
 /**
  * @author mguerrero
