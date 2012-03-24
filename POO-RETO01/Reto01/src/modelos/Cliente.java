@@ -15,11 +15,16 @@ public class Cliente {
 	private String dni;
 	private String nombre;
 	private String apellido;
+        private String tipoCliente;
+        private double numeroPuntos;
 
-    public Cliente(String dni, String nombre, String apellido) {
+       
+    public Cliente(String dni, String nombre, String apellido, String tipoCliente, double numeroPuntos) {
         this.dni = dni;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.tipoCliente = tipoCliente;
+        this.numeroPuntos = numeroPuntos;
     }
 
     public String getApellido() {
