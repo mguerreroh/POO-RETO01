@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 package vistas;
-
+import controladoras.AdmCliente;
 /**
  *
  * @author ricardogs
@@ -195,7 +195,7 @@ public class RegistraFacturas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBuscaDniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscaDniActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_btnBuscaDniActionPerformed
 
     /**
