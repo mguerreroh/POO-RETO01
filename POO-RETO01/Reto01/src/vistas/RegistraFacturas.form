@@ -38,33 +38,33 @@
               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblApellido" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jTextField3" min="-2" pref="232" max="-2" attributes="0"/>
+                      <Component id="txtApellido" min="-2" pref="232" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblNombre" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblDni" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jTextField1" min="-2" pref="75" max="-2" attributes="0"/>
+                              <Component id="txtRuc" min="-2" pref="75" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jButton1" min="-2" pref="72" max="-2" attributes="0"/>
+                              <Component id="btnBuscaDni" min="-2" pref="72" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jTextField2" min="-2" pref="232" max="-2" attributes="0"/>
+                          <Component id="txtNombre" min="-2" pref="232" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+              <Component id="jButton3" min="-2" pref="83" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
@@ -103,20 +103,20 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton1" alignment="3" max="32767" attributes="0"/>
+                  <Component id="lblDni" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtRuc" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnBuscaDni" alignment="3" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNombre" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblApellido" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtApellido" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -152,31 +152,31 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="txtRuc">
       <Properties>
         <Property name="focusCycleRoot" type="boolean" value="true"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="lblDni">
       <Properties>
         <Property name="text" type="java.lang.String" value="DNI:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="lblNombre">
       <Properties>
         <Property name="text" type="java.lang.String" value="Nombre:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="lblApellido">
       <Properties>
         <Property name="text" type="java.lang.String" value="Apellido:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="txtNombre">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="txtApellido">
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="btnBuscaDni">
       <Properties>
         <Property name="text" type="java.lang.String" value="Busca DNI"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -186,6 +186,9 @@
         </Property>
         <Property name="name" type="java.lang.String" value="btnBuscaCliente"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBuscaDniActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
