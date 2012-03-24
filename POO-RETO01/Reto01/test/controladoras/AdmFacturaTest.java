@@ -28,10 +28,28 @@ public class AdmFacturaTest {
         System.out.println("DNI no debe contener espacios en blanco");
     }
     
+//    @Test
+//    public void siNoingresoNumeroDebeDarError(){
+//        assertFalse(admFactura.verificarNumero(null));
+//        System.out.println("El Numero de Factura no debe estar vacio");
+//    }
+    
     @Test
-    public void siNoingresoNumeroDebeDarError(){
-        assertFalse(admFactura.verificarNumero(null));
-        System.out.println("El Numero de Factura no debe estar vacio");
+    public void siNumeroDeFacturaExisteDebeDarError(){
+        assertFalse(admFactura.buscaFactura("001")==false);
+        System.out.println("La factura ya existe, no debe registrar doble");
+    }
+    
+    @Test
+    public void siNumeroDeFacturaEsVacioDebeDarError(){
+        assertFalse(admFactura.verificaNumeroFactura(null));
+        System.out.println("La factura no debe de estar vacia");
+    }
+    
+    @Test
+    public void siNumeroDeFacturaEstaEnBlancoDebeDarError(){
+        assertFalse(admFactura.verificarNumeroFacturaVacio("   "));
+        System.out.println("La factura no debe de estar en blanco");
     }
     
     @Test
@@ -75,14 +93,9 @@ public class AdmFacturaTest {
 
     @Test
     public void siFechaPerteneceAlAñoIngresado(){
-        assertFalse(admFactura.verificaFechaPerteneceAño("2012-12-32",2015));
+        assertFalse(admFactura.verificaFechaPerteneceAnho("2012-12-32",2015));
         System.out.println("La fecha de la factura no corresponde al año ingresado");
     }
     
-    @Test
-    public void siNumeroDeFacturaExisteDebeDarError(){
-        assertFalse(admFactura.buscaFactura("001")==false);
-        System.out.println("La factura ya existe, no debe registrar doble");
-    }
-
+    
 }

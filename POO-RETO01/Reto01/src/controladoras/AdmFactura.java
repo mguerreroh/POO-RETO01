@@ -37,6 +37,20 @@ public class AdmFactura {
         return false;
    }
     
+    public static boolean verificaNumeroFactura(String numeroFactura){
+        if(numeroFactura != null) {
+            return true;
+        }
+        return false;
+    }
+    
+    public static boolean verificarNumeroFacturaVacio(String dni){
+        if(dni.trim().length() != 0){
+            return true;
+        }
+        return false;
+    }
+    
     public static boolean verificarDNI(String dni){
         if(dni != null) {
             return true;
@@ -46,46 +60,38 @@ public class AdmFactura {
     
     public static boolean verificarDNIVacio(String dni){
         if(dni.trim().length() != 0){
-        //if(dni.equals("") != 0){
             return true;
         }
         return false;
     }
 
-    public boolean verificarNumero(String numeroFactura){
-        if(numeroFactura != null){
-            return true;
-        }
-        return false;
-    }
-    
-    public boolean verificarFecha(String fecha){
+    public static boolean verificarFecha(String fecha){
         if(fecha != null){
             return true;
         }
         return false;
     }
     
-    public boolean verificarMontoVenta(String montoVenta){
+    public static boolean verificarMontoVenta(Double montoVenta){
         if(montoVenta != null){
             return true;
         }
         return false;
     }
     
-    public boolean verificarMontoVentaMayorCero(Double montoVenta){
+    public static boolean verificarMontoVentaMayorCero(Double montoVenta){
         if(montoVenta > 0){
             return true;
         }
         return false;
     }
     
-    public boolean verificarMontoVentaMayorCero1(Double montoVenta){
-        if(montoVenta > 0){
-            return true;
-        }
-        return false;
-    }
+//    public boolean verificarMontoVentaMayorCero1(Double montoVenta){
+//        if(montoVenta > 0){
+//            return true;
+//        }
+//        return false;
+//    }
     
     public boolean verificarMontoVentaMayorCero2(Double montoVenta){
         if(montoVenta > 0){
@@ -131,8 +137,8 @@ public class AdmFactura {
     }
     
     //**
-    public boolean validarFecha(String fecha) {
-        Date fechaIngresada;
+    public static boolean validarFecha(String fecha) {
+        //Date fechaIngresada;
         if (fecha == null)
             return false;
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -149,15 +155,18 @@ public class AdmFactura {
     }
     //**
     
-    public boolean verificaFechaPerteneceMes(String fecha, Integer mes){
-        if (mes != Integer.parseInt(fecha.substring(5, 6)))
+    public static boolean verificaFechaPerteneceMes(String fecha, Integer mes){
+        if (mes != Integer.parseInt(fecha.substring(6, 7))){
+            System.out.println(Integer.parseInt(fecha.substring(6,7)));
             return false;
+        }
         return true;
     }
     
-    public boolean verificaFechaPerteneceAño(String fecha, Integer anho){
-        if (anho != Integer.parseInt(fecha.substring(1, 4)))
+    public static boolean verificaFechaPerteneceAnho(String fecha, Integer anho){
+        if (anho != Integer.parseInt(fecha.substring(0, 4))){
             return false;
+        }
         return true;
     }
     
