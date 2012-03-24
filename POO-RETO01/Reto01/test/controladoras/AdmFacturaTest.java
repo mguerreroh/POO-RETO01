@@ -78,17 +78,11 @@ public class AdmFacturaTest {
         assertFalse(admFactura.verificaFechaPerteneceAño("2012-12-32",2015));
         System.out.println("La fecha de la factura no corresponde al año ingresado");
     }
-    /*
+    
     @Test
-    public void alumnosdebeTenerUnaCalificacion(){
-        String dni = "09534044";
-        String nombre = "Marcelino";
-        String apellido = "tradicional";
-        Alumno alumno = new Alumno(codigo, nombre, modalidad);
-        Calificacion calificacion = alumno.getCalificacion();
-        Assert.assertNotNull(calificacion);
+    public void siNumeroDeFacturaExisteDebeDarError(){
+        assertFalse(admFactura.buscaFactura("001")==false);
+        System.out.println("La factura ya existe, no debe registrar doble");
     }
-    */
-     
 
 }

@@ -27,14 +27,24 @@ public class AdmFactura {
         this.dbFactura.add(new Factura("dni0953", "003"          , "01/05/2012", 100.00));
     }
     
-    public boolean verificarDNI(String dni){
+    public boolean buscaFactura(String numeroFactura){
+        this.simularTabla();
+        for(Factura unaFactura:dbFactura){
+            if(unaFactura.getNumeroFactura().equals(numeroFactura)){
+                return true;
+            }
+        }
+        return false;
+   }
+    
+    public static boolean verificarDNI(String dni){
         if(dni != null) {
             return true;
         }
         return false;
     }
     
-    public boolean verificarDNIVacio(String dni){
+    public static boolean verificarDNIVacio(String dni){
         if(dni.trim().length() != 0){
         //if(dni.equals("") != 0){
             return true;
