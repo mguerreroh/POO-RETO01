@@ -4,7 +4,8 @@
  */
 package controladoras;
 
-import org.junit.AfterClass;
+import java.util.ArrayList;
+import modelos.Cliente;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.BeforeClass;
@@ -14,7 +15,9 @@ import org.junit.BeforeClass;
  */
 public class AdmClienteTest {
     
-    AdmCliente admCliente = new AdmCliente();
+    ArrayList<Cliente> dbCliente;
+    AdmCliente admCliente = new AdmCliente(dbCliente);
+    
     
     @Test
     public void siNoingresoDNIDebeDarError(){
@@ -45,4 +48,5 @@ public class AdmClienteTest {
         assertFalse(admCliente.buscaNombreApellidoDuplicado("Alvaro", "Torres"));
         System.out.println("Cliente no esta registrado");
     }
+
 }
