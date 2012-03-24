@@ -53,6 +53,8 @@ public class RegistraFacturas extends javax.swing.JFrame {
         setBackground(new java.awt.Color(204, 204, 204));
         setName("frmRegistraFactura");
 
+        jTextField1.setFocusCycleRoot(true);
+
         jLabel1.setText("DNI:");
 
         jLabel2.setText("Nombre:");

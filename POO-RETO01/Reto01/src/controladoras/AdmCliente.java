@@ -22,14 +22,14 @@ public class AdmCliente {
     
 //    private ArrayList<Cliente> dbCliente = new ArrayList<Cliente>();
    
-/*    private void simularTabla(){
+    public void simularTabla(){
         this.dbCliente.add(new Cliente("dni"    , "nombre"   , "apellido", "tipoCliente", 5));
         this.dbCliente.add(new Cliente("dni0610", "Ricardo", "Giron", "Gold", 100));
         this.dbCliente.add(new Cliente("dni0953", "Marcelino", "Guerrero", "Normal", 10));
         this.dbCliente.add(new Cliente("dni0101", "Alvaro", "Giron", "Platinum", 200));
         this.dbCliente.add(new Cliente("dni0102", "Rodrigo", "Giron", "Normal", 10));
         this.dbCliente.add(new Cliente("dni0103", "Ricardo", "Guerrero", "Platinum", 250));
-    }*/
+    }
 
     public AdmCliente(ArrayList<Cliente> dbCliente) {
         this.dbCliente = dbCliente;

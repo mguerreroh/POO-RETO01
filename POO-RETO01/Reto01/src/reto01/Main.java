@@ -29,9 +29,13 @@ public class Main {
         dbCliente.add(new Cliente("dni0103", "Ricardo", "Guerrero", "Platinum", 250));
         
         AdmCliente objAdmCliente = new AdmCliente(dbCliente);
-        if(objAdmCliente.buscaCliente("dni0101")){
+        if(objAdmCliente.buscaCliente("dni9999")){
+            objAdmCliente.DatosClienteBuscado("dni0101");
             System.out.println(objAdmCliente.getObjClienteEncontrado().getNombre());
-        }
+            System.out.println(objAdmCliente.getObjClienteEncontrado().getApellido());
+            
+        } else
+            System.out.println("No se encontró DNI");
             
         
         
